@@ -18,6 +18,7 @@ def before_all(context):
     context.test_case_ids = []
 
     context.url = local_config['main']['url']
+    context.endpoint = local_config['main']['endpoint']
     context.api_movie_base = local_config['api']['movie_base']
     context.api_list_movies = local_config['api']['list_all_movies']
 

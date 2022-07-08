@@ -1,1 +1,0 @@
-allure serve D:\\Dropbox\\personal\\work\\rdx_test\\automation\\reports

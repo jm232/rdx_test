@@ -1,4 +1,4 @@
-Feature: Simple Application Movie functionality
+Feature: Simple Application UI Movie functionality
 
   @ui
   Scenario Outline: Create new movie
