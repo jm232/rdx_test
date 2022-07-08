@@ -21,7 +21,7 @@ def step_impl(context):
     url = context.endpoint + config['api']['list_all_movies']
     context.response = requests.get(url=url, headers=header, verify=True)
 
-@When('I call GET request on get movie service "{id}"')
+@When('I call GET request on movie service "{id}"')
 def step_impl(context, id):
     url = context.endpoint + config['api']['movie_base'] + "/" + id
     context.response = requests.get(url=url, headers=header, verify=True)
@@ -52,3 +52,14 @@ def step_impl(context, code):
     log.info(json.dumps(response_json, indent=4))
     allure.attach(json.dumps(response_json, indent=4), name='response', attachment_type=allure.attachment_type.JSON)
     assert_that(context.response.status_code, equal_to(code))
+
+@When('I call PUT request on movie service "{name}"')
+def step_impl(context, name):
+    response_json = context.response.json()
+    value_id = None
+    for key in response_json["data"]:
+        if key["name"] == name:
+            value_id = key["_id"]
+            break
+    url = context.endpoint + config['api']['movie_base'] + "/" + value_id
+    context.response = requests.put(url=url, headers=header, json=json.loads(context.text), verify=True)
