@@ -1,7 +1,7 @@
 # Notes on Movie list application
 ## Bugs and improvements
 ### General
-1. Dashboard page of simple application is empty
+1. Dashboard page or empty List Movies of simple application is blank
 2. UX design is poor, e.g. List Movies without any title, Create Movie with title(huge font)
 3. Selected page is not highlighted on links in header
 ### Create Movie page
@@ -19,6 +19,7 @@
 4. Filtering doesn't work properly, it matches string only if the first character of value is being filtered, e.g movie "abc", will not filtered with "bc"
 5. On empty page API throws 404 error: {"Movie not found", success: false}, but it is valid use case, it should be 200
 6. Delete functionality is broken, it doesn't delete item, repeatedly, but not always, hard to determine the behaviour, occasionally it deletes the other item
+7. Typo "Do tou want to delete ..." in event window for deleting item
 
 ## Functionality to improve/change
 ### Delete
