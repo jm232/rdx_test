@@ -47,5 +47,5 @@ behave .\automation\features\api\BasicAPITest.feature -f allure_behave.formatter
 ```
 Test Report:
 ```
-allure serve {ROOT_DIR}\automation\reports
+allure serve .\automation\reports
 ```
