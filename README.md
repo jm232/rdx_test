@@ -1,14 +1,14 @@
-#Introduction
+# Introduction
 rdx exercise for hiring purposes
-##Manual testing part
+## Manual testing part
 Please see file `manual_testing/notes.md`
-##Automation part
+## Automation part
 Python based framework for UI and API tests.
 - UI part used `selenium` library and chrome browser. Failed step is screenshoted, saved and published to report.
 - API part used `requests` as HTTP library
 
 Project saved in `automation` directory
-###Prerequisites
+### Prerequisites
 1. Running simple app
 2. Cloned repo https://github.com/jm232/rdx_test
 3. Installed:
@@ -21,21 +21,21 @@ Project saved in `automation` directory
 ```
 pip install -r .\automation\requirements.txt
 ```
-###Structure
-.
-├── automation                  # root folder for automated tests
-│   ├── features                # feature test file with test scenarios
-│   ├── page_objects            # Definition of UI elements and functions related to them
-│   ├── steps                   # Action steps
-│   ├── utilities               # folder for various configuration files (file operation, screenshots, logging, selenium functions) 
-│   ├── environment.py          # Hook structure 
-│   ├── fixtures.py             # Browser setting
-│   ├── requirements.txt        # List of packages
-│   └── properties.ini          # Property files
-├── manual_testing
+### Structure
 
-###Test Execution:
-[Executed on Windows env]
+    .
+    ├── features                # feature test file with test scenarios
+    ├── page_objects            # Definition of UI elements and functions related to them
+    ├── steps                   # Action steps
+    ├── utilities               # folder for various configuration files (file operation, screenshots, logging, selenium functions) 
+    ├── environment.py          # Hook structure 
+    ├── fixtures.py             # Browser setting
+    ├── requirements.txt        # List of packages
+    └── properties.ini          # Property files
+
+
+### Test Execution:
+[Executed on Windows env from folder `rdx_test/automation`]
 
 UI
 ```
