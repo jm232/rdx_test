@@ -3,7 +3,7 @@ rdx exercise for hiring purposes
 ## Manual testing part
 Please see file `manual_testing/notes.md`
 ## Automation part
-Python based framework for UI and API tests.
+Python based framework for UI and API tests. Tests written in Gherkin for good readability of scenarios.
 - UI part used `selenium` library and chrome browser. Failed step is screenshoted, saved and published to report.
 - API part used `requests` as HTTP library
 
