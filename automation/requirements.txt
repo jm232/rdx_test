@@ -2,11 +2,5 @@ PyHamcrest
 behave
 allure-behave
 requests
-jsonpath_rw_ext
 selenium
 webdriver-manager
-pandas==1.4.0
-openpyxl
-pyotp~=2.6.0
-boto3
-xmltodict

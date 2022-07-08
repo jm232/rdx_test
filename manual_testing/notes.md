@@ -6,8 +6,8 @@
 3. Selected page is not highlighted on links in header
 ### Create Movie page
 1. Rating clarification needed (max/min) + hint to range of numbers
-2. 'Name' input field without any validation of maximum characters
-3. 'Time' input field without any validation of what characters are allowed (only numbers should be allowed) + no specification of time values (hours/minutes/seconds)
+2. 'Name' input field without any UI validation of maximum characters
+3. 'Time' input field without any UI validation of what characters are allowed (only numbers should be allowed) + no specification of time values (hours/minutes/seconds)
 4. 'Cancel' button redirects to 'List Movies' page, why?
 5. No clarification which field is required to fill in
 6. Clicking on 'Add Movie' on empty page is without any response
