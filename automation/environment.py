@@ -47,21 +47,21 @@ def after_step(context, step):
                           , attachment_type=AttachmentType.PNG)
 
 def before_scenario(context, feature):
-    log.info('Scenario Execution is Starting')
+    log.info('Scenario Execution is starting')
 
 def before_tag(context, tag):
-    log.info(tag + ' is Starting')
+    log.info(tag + ' tag is starting')
     if tag == "ui":
         use_fixture(browser_chrome, context)
 
 def after_tag(context, tag):
-    log.info(tag + ' is completed')
+    log.info(tag + ' tag is completed')
 
 def after_scenario(context, feature):
-    log.info('Scenario Execution is Completed')
+    log.info('Scenario Execution is completed')
 
 def after_feature(context, feature):
-    log.info('Execution for Feature is Completed  - ' + feature.name)
+    log.info('Execution for Feature is completed  - ' + feature.name)
 
 
 def after_all(context):
